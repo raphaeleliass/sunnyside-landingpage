@@ -11,7 +11,7 @@ This project contains the Sunnyside landingpage project.
 
 ### Links
 
-- Live Site URL: [Here](https://raphaelelias-product-preview-card.netlify.com)
+- Live Site URL: [Here](https://raphaelelias-sunnyside.vercel.app)
 
 ## My Process
 
@@ -27,12 +27,6 @@ During this project, I reinforced my understanding of:
 - Using Tailwind CSS for styling
 - Basic HTML structure
 
-### Continued Development
-
-In future projects, I aim to:
-
-- Explore more advanced Tailwind CSS features
-- Dive deeper into HTML and CSS techniques
 
 ### Useful Resources
 
@@ -42,9 +36,8 @@ In future projects, I aim to:
 
 - Linkedin - [Linkedin](https://www.linkedin.com/in/raphaeleliass)
 - GitHub - [Github](https://www.github.com/raphaeleliass)
-- Instagram - [Instagram](https://www.instagram.com/raphaeleliass)
+- My Projects - [Portfolio](https://raphaelelias.vercel.app)
 
 ## Acknowledgments
 
-- Challenge by [Frontend Mentor](https://www.frontendmentor.io?ref=challenge).
 - Coded by [Raphael Elias](https://www.github.com/raphaeleliass).
