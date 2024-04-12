@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- JavaScript Files -->
+    <script src="src/scripts/menuMobile.js" defer></script>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="src/styles/output.css" />
+
+    <!-- Google Fonts -->
+    <!-- Barlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+      defer
+    />
+    <!-- Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+      defer
+    />
+  </head>
+  <body>
+    <header
+      class="flex content-center items-center justify-between bg-[#3dbfff] px-10 py-4 md:py-4"
+    >
+      <a href="index.html"
+        ><img src="src/icons/logo.svg" alt="Logo da empresa Sunnyside"
+      /></a>
+      <nav class="hidden text-white md:flex">
+        <ul class="flex items-center gap-4">
+          <li><a class="p-2" href="#about">About</a></li>
+          <li><a class="p-2" href="#services">Services</a></li>
+          <li><a class="p-2" href="#projects">Projects</a></li>
+          <li>
+            <button class="btn-white"><a href="#contact">CONTACT</a></button>
+          </li>
+        </ul>
+      </nav>
+      <button class="block md:hidden" id="btn-menu">
+        <img src="src/icons/menu-icon.svg" alt="Botão do menu" />
+      </button>
+
+      <!-- MENU MOBILE-->
+      <nav class="menu-mobile" id="menu-mobile">
+        <button class="absolute right-12 top-6 m-auto" id="btn-close">
+          <img src="src/icons/close-icon.svg" alt="" />
+        </button>
+        <ul class="mt-8 flex flex-col gap-4 p-8 text-center">
+          <li><a class="p-2" href="#about">About</a></li>
+          <li><a class="p-2" href="#services">Services</a></li>
+          <li><a class="p-2" href="#projects">Projects</a></li>
+          <li>
+            <button class="btn-yellow">
+              <a href="#contact" id="btn-contact">CONTACT</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="fixed left-0 top-0 z-40 hidden min-h-screen w-screen bg-black opacity-50"
+        id="close-aria"
+      ></div>
+    </header>
+    <div
+      class="min-h-screen bg-header_mobile bg-cover bg-center md:w-full md:bg-header_desktop"
+    >
+      <div
+        class="relative flex flex-col items-center justify-center gap-52 pt-28 md:gap-48 md:pt-32"
+      >
+        <h1
+          class="text-center font-Fraunces text-6xl font-Fraunces_900 text-white md:text-7xl"
+        >
+          WE &nbsp; ARE &nbsp; CREATIVES
+        </h1>
+        <img
+          class="w-8 animate-bounce md:w-6"
+          src="src/icons/icon-arrow-down.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <section class="flex flex-col" id="about">
+      <article class="flex flex-col md:h-[600px] md:flex-row">
+        <div class="md:w-1/2">
+          <div
+            class="h-[308px] bg-transform_mobile bg-cover bg-center md:hidden md:bg-transform"
+          ></div>
+          <div
+            class="flex h-[435px] flex-col justify-center gap-12 bg-neutral_White p-6 text-center md:h-full md:p-16"
+          >
+            <h2 class="font-Fraunces text-4xl font-Fraunces_900">
+              Transform your brand
+            </h2>
+            <p class="text-sm text-neutral_Dark_grayish_blue md:text-base">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a
+              class="mr-auto border border-b-primary_Yellow border-opacity-0 font-Fraunces text-sm font-Fraunces_900 transition-all hover:border-b-8 hover:border-opacity-100"
+              href=""
+              >LEARN MORE</a
+            >
+          </div>
+        </div>
+        <div class="hidden w-1/2 bg-transform bg-cover bg-center md:flex"></div>
+      </article>
+
+      <article class="flex flex-col md:h-[600px] md:flex-row">
+        <div
+          class="h-[308px] w-full bg-stand_out_mobile bg-cover bg-center md:h-full md:w-1/2 md:bg-stand_out"
+        ></div>
+        <div
+          class="flex h-[435px] flex-col justify-center gap-12 bg-neutral_White p-6 text-center md:h-full md:w-1/2 md:p-16"
+        >
+          <h2 class="font-Fraunces text-4xl font-Fraunces_900">
+            Stand out to the right audience
+          </h2>
+          <p class="text-sm text-neutral_Dark_grayish_blue md:text-base">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a
+            href="#"
+            class="mr-auto border border-b-primary_Soft_red border-opacity-0 font-Fraunces text-sm font-Fraunces_900 transition-all hover:border-b-8 hover:border-opacity-100"
+            >LEARN MORE</a
+          >
+        </div>
+      </article>
+
+      <article
+        class="flex flex-col text-center md:h-[600px] md:flex-row"
+        id="services"
+      >
+        <div
+          class="h-[597px] bg-graphic_design_mobile bg-cover bg-center md:h-full md:w-1/2 md:bg-graphic_design"
+        >
+          <div
+            class="flex h-full w-full flex-col justify-end px-6 py-12 text-primary_Dark_desaturated_cyan_graphic_design_text md:px-32 md:py-0 md:pb-10"
+          >
+            <h2 class="py-6 font-Fraunces text-3xl font-Fraunces_900">
+              Graphic design
+            </h2>
+            <p class="text-sm">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[597px] bg-photography_mobile bg-cover bg-center md:h-full md:w-1/2"
+        >
+          <div
+            class="flex h-full w-full flex-col justify-end px-6 py-12 text-primary_Dark_desaturated_cyan_graphic_design_text md:px-32 md:py-0 md:pb-10"
+          >
+            <h2 class="py-6 font-Fraunces text-3xl font-Fraunces_900">
+              Photography
+            </h2>
+            <p class="text-sm">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <section
+        class="flex min-h-screen items-center justify-center"
+        id="projects"
+      >
+        <div
+          class="flex flex-col items-center gap-16 px-8 py-20 md:max-w-5xl md:gap-32 md:p-32 md:px-0 md:py-0"
+        >
+          <h2
+            class="text-center font-Fraunces text-2xl font-Fraunces_900 text-neutral_Grayish_blue"
+          >
+            CLIENT TESTIMONIALS
+          </h2>
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div
+              class="flex flex-col items-center justify-center gap-8 text-center md:gap-16"
+            >
+              <img
+                class="size-24 rounded-full"
+                src="src/icons/image-emily.jpg"
+                alt=""
+              />
+              <p class="text-base text-neutral_Very_dark_grayish_blue">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <span
+                class="font-Fraunces text-xl font-Fraunces_900 text-neutral_Very_dark_desaturated_blue"
+                >Emily R.
+                <p class="font-Barlow text-sm text-neutral_Grayish_blue">
+                  Marketing Director
+                </p></span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center justify-center gap-8 pt-14 text-center md:gap-16 md:pt-0"
+            >
+              <img
+                class="size-24 rounded-full"
+                src="src/icons/image-thomas.jpg"
+                alt="picture of Thomas"
+              />
+              <p class="text-base text-neutral_Very_dark_grayish_blue">
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <span
+                class="font-Fraunces text-xl font-Fraunces_900 text-neutral_Very_dark_desaturated_blue"
+                >Thomas S.
+                <p class="font-Barlow text-sm text-neutral_Grayish_blue">
+                  Chief Operating Officer
+                </p></span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center justify-center gap-8 pt-14 text-center md:gap-16 md:pt-0"
+            >
+              <img
+                class="size-24 rounded-full"
+                src="src/icons/image-jennie.jpg"
+                alt="picture of Jennie"
+              />
+              <p class="text-base text-neutral_Very_dark_grayish_blue">
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <span
+                class="font-Fraunces text-xl font-Fraunces_900 text-neutral_Very_dark_desaturated_blue"
+                >Jennie F.
+                <p class="font-Barlow text-sm text-neutral_Grayish_blue">
+                  Business Owner
+                </p></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="grid h-[348px] grid-cols-2 md:h-[445px] md:grid-cols-4">
+        <div
+          class="bg-gallery_milkbottles_mobile bg-cover bg-center md:bg-gallery_milkbottles"
+        ></div>
+        <div
+          class="bg-gallery_orange_mobile bg-cover bg-center md:bg-gallery_orange"
+        ></div>
+        <div
+          class="bg-gallery_cone_mobile bg-cover bg-center md:bg-gallery_cone"
+        ></div>
+        <div
+          class="bg-gallery_sugarcubes_mobile bg-cover bg-center md:bg-gallery_sugarcubes"
+        ></div>
+      </section>
+
+      <footer
+        class="flex h-[348px] flex-col items-center justify-center gap-6 bg-emerald-200 md:h-[350px]"
+        id="contact"
+      >
+        <a href="#"
+          ><img
+            src="src/icons/green-logo.svg"
+            class="w-36"
+            alt="Logo da Sunnyside"
+        /></a>
+        <span class="flex gap-4">
+          <a
+            href="#about"
+            class="p-2 text-emerald-600 transition-all hover:text-neutral_White"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="p-2 text-emerald-600 transition-all hover:text-neutral_White"
+            >Services</a
+          >
+          <a
+            href="#projects"
+            class="p-2 text-emerald-600 transition-all hover:text-neutral_White"
+            >Projects</a
+          >
+          <a
+            href="#contacts"
+            class="p-2 text-emerald-600 transition-all hover:text-neutral_White"
+            >Contact</a
+          >
+        </span>
+        <span class="flex gap-4">
+          <a href="#"
+            ><img src="src/icons/icon-facebook.svg" alt="icone do facebook"
+          /></a>
+          <a href="#"
+            ><img src="src/icons/icon-instagram.svg" alt="icone do instagram"
+          /></a>
+          <a href="#"
+            ><img src="src/icons/icon-twitter.svg" alt="icone do twitter"
+          /></a>
+          <a href="#"
+            ><img src="src/icons/icon-pinterest.svg" alt="icone do pinterest"
+          /></a>
+        </span>
+      </footer>
+    </section>
+  </body>
+</html>

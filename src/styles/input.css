@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-Barlow text-standard;
+}
+
+.btn-white {
+  @apply rounded-full bg-neutral_White px-4 py-2 font-Fraunces text-sm font-Fraunces_900 text-neutral_Very_dark_desaturated_blue transition-all hover:bg-[#6fceff] hover:text-neutral_White;
+}
+
+.btn-yellow {
+  @apply rounded-full bg-yellow-300 px-4 py-2 font-Fraunces text-sm font-Fraunces_900 text-neutral_Very_dark_desaturated_blue transition-all;
+}
+
+.menu-mobile {
+  @apply absolute left-0 right-0 top-16 z-50 hidden translate-y-6 justify-center rounded bg-neutral_White  text-neutral_Very_dark_desaturated_blue blur transition-all md:hidden;
+}
+
+.menu-mobile-active {
+  @apply absolute left-0 right-0 top-16 z-50 m-5 flex translate-y-0 flex-col justify-center rounded bg-neutral_White text-neutral_Very_dark_desaturated_blue blur-none transition-all md:hidden;
+}
